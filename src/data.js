@@ -21,6 +21,40 @@ export const profile = {
   cvUrl: 'https://drive.google.com/drive/folders/1RE2OBHP00mj_fhOo8nGptx-nKutcAq4N?usp=sharing',
 };
 
+// `me` must match one entry of `authors` exactly; that author is highlighted in bold.
+export const publications = [
+  {
+    title: 'GA-ECBM: Gated Additive Energy-Based Concept Bottleneck Models for Reliable Concept Interventions',
+    status: 'Under submission',
+    summary:
+      'An energy-based concept bottleneck model with an additive concept-label energy and a gated image term, so correcting concepts at test time rarely turns a correct prediction into a wrong one. On CUB-200-2011 (3 seeds, 100 epochs) it cut intervention harm from 2.83% to 0.03% compared with the official ECBM.',
+    authors: ['Huy Nhat-Le', 'Khanh Quoc Tran-Duong'],
+    me: 'Huy Nhat-Le',
+    links: [{ label: 'GitHub', url: 'https://github.com/LeNhatHuy-CS/GA-ECBM' }],
+  },
+  {
+    title:
+      'ACC-ECBM: Interpretable Lung Cancer Identification from Chest Radiographs and Pre-Imaging Clinical Data with Concept Bottlenecks and Explainable Boosting',
+    status: 'Submitted',
+    venue:
+      '[ICCIES 2027] 3rd International Conference on Computational Intelligence in Engineering Science (Scopus Indexed)',
+    summary:
+      'A hybrid pipeline for lung cancer identification in which only perception is a deep network and the final prediction is an explainable boosting machine. A reasoning module links 14 radiological findings to a clinical knowledge graph and propagates clinician-confirmed findings with adaptive concept calibration. Evaluated on MIMIC data.',
+    authors: ['Thanh Phong Nguyen', 'Huy Nhat-Le', 'Khanh Quoc Tran-Duong', 'Van Huy Pham'],
+    me: 'Huy Nhat-Le',
+    links: [],
+  },
+  {
+    title: 'TDTU-TARViLeg: A Benchmark for Time-Aware Vietnamese Legal Retrieval',
+    status: 'Under review',
+    venue:
+      '[ICCIES 2027] 3rd International Conference on Computational Intelligence in Engineering Science (Scopus Indexed)',
+    authors: ['Phan, T. H.', 'Nguyen, Q. H.', 'Le, N. H.', 'Le, D. D.', 'Duong, T.-C.', 'Le, A.-C.'],
+    me: 'Le, N. H.',
+    links: [{ label: 'Site', url: 'https://iccies.tdtu.edu.vn/' }],
+  },
+];
+
 export const projects = [
   {
     title: 'Face Authentication for Web Applications',
