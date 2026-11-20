@@ -40,6 +40,12 @@ export default function Hero() {
             </p>
             <p className="hero-contact-line">
               <strong className="hero-contact-label">Profiles:</strong>{' '}
+              {profile.cvUrl && (
+                <>
+                  <ExternalLink href={profile.cvUrl}>CV</ExternalLink>
+                  {' · '}
+                </>
+              )}
               {links.orcid && <ExternalLink href={links.orcid}>ORCID</ExternalLink>}
               {links.linkedin && (
                 <>

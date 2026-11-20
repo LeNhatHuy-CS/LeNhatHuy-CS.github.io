@@ -16,7 +16,7 @@
   --border: #e2e8f0;
   --border-strong: #cbd5e1;
 
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --text-xs: 0.75rem;
@@ -232,7 +232,7 @@ a:hover {
 .hero-name {
   font-size: clamp(2rem, 4.5vw, 2.75rem);
   line-height: 1.15;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 
@@ -300,7 +300,7 @@ a:hover {
 .section-title {
   margin-bottom: var(--space-8);
   font-size: var(--text-3xl);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--accent);
 }

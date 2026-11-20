@@ -16,9 +16,9 @@ export const profile = {
     orcid: 'https://orcid.org/0009-0004-7036-0578',
     linkedin: '', // add your LinkedIn URL here to show it
   },
-  // Put your CV file in the public/ folder (for example public/cv.pdf) and set '/cv.pdf'.
+  // The CV button opens this link. It can be a Google Drive link or a file in public/ (for example '/cv.pdf').
   // While this is empty, the CV button is hidden.
-  cvUrl: '',
+  cvUrl: 'https://drive.google.com/drive/folders/1RE2OBHP00mj_fhOo8nGptx-nKutcAq4N?usp=sharing',
 };
 
 export const projects = [
