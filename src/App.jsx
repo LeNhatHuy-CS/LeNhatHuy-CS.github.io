@@ -16,10 +16,10 @@ export default function App() {
       <Header />
       <main id="main-content">
         <Hero />
-        <Publications />
         <Projects />
         <Skills />
         <Experience />
+        <Publications />
         <Contact />
       </main>
       <Footer />

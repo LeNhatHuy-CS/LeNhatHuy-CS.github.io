@@ -177,7 +177,7 @@ export const experience = [
     org: 'Ton Duc Thang University · Ho Chi Minh City',
     points: [
       'Final-year student.',
-      'Selected coursework: Data Analysis and Visualization, Introduction to Information Security, Deep Learning.',
+      'Selected coursework: Deep Learning, Computer Vision, Machine Learning.',
     ],
   },
 ];
