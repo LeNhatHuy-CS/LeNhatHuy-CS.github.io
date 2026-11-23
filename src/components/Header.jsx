@@ -3,10 +3,10 @@ import { profile } from '../data.js';
 
 const NAV = [
   { id: 'about', label: 'About' },
+  { id: 'publications', label: 'Publications' },
   { id: 'projects', label: 'Projects' },
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
-  { id: 'publications', label: 'Publications' },
   { id: 'contact', label: 'Contact' },
 ];
 

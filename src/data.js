@@ -57,99 +57,38 @@ export const publications = [
 
 export const projects = [
   {
-    title: 'Face Authentication for Web Applications',
-    tag: 'Team project',
-    context: 'Introduction to Information Security · Ton Duc Thang University',
-    links: [
-      {
-        label: 'GitHub',
-        url: 'https://github.com/LeNhatHuy-CS/Face-Authentication-for-Web-Application',
-      },
-    ],
+    title: 'DermaXAI: Explainable Skin Lesion Classification',
+    tag: '',
+    context: 'Explainable AI · Concept bottleneck models · Derm7pt dataset',
+    links: [{ label: 'GitHub', url: 'https://github.com/LeNhatHuy-CS/DermaXAI' }],
     summary:
-      'A face authentication system that replaces password-based login with real-time biometric verification from a webcam.',
+      'Melanoma vs. non-melanoma classification on the Derm7pt dataset, with predictions that can be explained through clinical concepts instead of a single black-box score.',
     highlights: [
-      'Detects and aligns faces with MTCNN, extracts embeddings with FaceNet and matches identities by cosine similarity.',
-      'Added liveness detection based on blink detection and movement analysis to prevent spoofing attacks.',
-      'Built the FastAPI backend with JWT session management and a webcam web interface (WebRTC).',
-      'Role: fullstack and integration in a team of three.',
+      'Compared four classifiers on an EfficientNet-B0 backbone: a black-box baseline, a joint concept bottleneck model (CBM), the energy-based ECBM, and GA-ECBM, a gated variant developed in this project (gated image branch with margin, intervention and monotonicity losses).',
+      'Used the official Derm7pt split (413 train / 203 validation / 395 test) and ran every model with three seeds (42, 123, 2026).',
+      'On the validation split, ECBM and GA-ECBM reach about 71% concept accuracy against 57.2% for the joint CBM, and GA-ECBM gives the highest ROC-AUC under concept intervention (up to 0.938 at k = 7).',
     ],
-    tech: ['Python', 'FastAPI', 'PyTorch', 'MTCNN', 'FaceNet', 'dlib', 'JWT'],
+    tech: ['Python', 'PyTorch', 'EfficientNet-B0', 'Concept bottleneck models', 'Explainable AI'],
   },
   {
-    title: 'Vietnamese VQA and Chest X-ray Report Generation',
-    tag: 'Team project',
-    context: 'Deep Learning final project · Ton Duc Thang University',
+    title: 'Vietnamese Legal QA Chatbot using LLM Fine-Tuning and RAG',
+    tag: '',
+    context: 'NLP · Retrieval-augmented generation · Vietnam Road Traffic Order and Safety Law',
     links: [
       {
         label: 'GitHub',
-        url: 'https://github.com/LeNhatHuy-CS/VQA-and-XRay_Generation_Report',
+        url: 'https://github.com/LeNhatHuy-CS/LLM-Finetuning-With-RAG-and-Comparisons',
       },
     ],
     summary:
-      'Two vision-language tasks: answering Vietnamese questions about Vietnamese food images, and generating radiology-style reports from chest X-rays.',
+      'A Vietnamese question-answering system for Vietnam\'s Road Traffic Order and Safety Law that compares four setups: the base LLM, RAG, LoRA/QLoRA fine-tuning, and fine-tuning combined with RAG.',
     highlights: [
-      'VQA on about 3,000 images across 30 food classes with 15,000 question-answer pairs. Compared ResNet50 + PhoBERT with LSTM and Transformer decoders against BLIP (zero-shot, fine-tuned and DPO-improved).',
-      'X-ray reports: compared a DenseNet121 + attention LSTM baseline with a fine-tuned BLIP model.',
-      'Evaluated with Exact Match, BLEU, ROUGE-L, METEOR, BERTScore and LLM-as-a-judge, and built a demo app for each task.',
+      'RAG pipeline: law PDF, parsing, chunking, embeddings and a vector database (ChromaDB in the app, FAISS in the notebooks); the top-k passages are filled into the prompt for the LLM.',
+      'Fine-tuned Llama 3.2 3B with PEFT (LoRA/QLoRA) and evaluated all four setups with BLEU, ROUGE, BERTScore and Recall@5.',
+      'Reference results: ROUGE-L rises from 0.241 (zero-shot) to 0.439 with fine-tuning and 0.443 with fine-tuning plus RAG, and retrieval reaches Recall@5 of 0.94. Test sets differ between setups, so these are indicative.',
+      'Built a full-stack web app to try the chatbot (Django and MySQL backend, React and Vite frontend), run locally with Docker Compose.',
     ],
-    tech: ['Python', 'BLIP', 'PhoBERT', 'ResNet50', 'DenseNet121', 'Jupyter'],
-  },
-  {
-    title: 'Student Performance Analysis',
-    tag: 'Team project',
-    context: 'Data Analysis and Visualization · Ton Duc Thang University',
-    links: [
-      {
-        label: 'GitHub',
-        url: 'https://github.com/LeNhatHuy-CS/Student_Performance_Analysis',
-      },
-    ],
-    summary:
-      'A statistical study of how gender, parental education and test preparation affect high school exam scores in Math, Reading and Writing.',
-    highlights: [
-      'Exploratory analysis with outlier detection, and normality checks using Shapiro-Wilk tests and Q-Q plots.',
-      'Hypothesis testing with t-tests and ANOVA, plus Pearson and Spearman correlation analysis.',
-      'Built a multiple linear regression model that predicts Math scores with R² ≈ 0.84.',
-    ],
-    tech: ['Python', 'Pandas', 'NumPy', 'Seaborn', 'SciPy', 'Statsmodels', 'Jupyter'],
-  },
-  {
-    title: 'Blossom: Flower Shop Management',
-    tag: 'Team project',
-    context: 'Web application · team of four',
-    links: [
-      {
-        label: 'GitHub',
-        url: 'https://github.com/LeNhatHuy-CS/Flower_Shop_Management_Software',
-      },
-    ],
-    summary:
-      'A flower shop website with a complete shopping flow and an admin panel for managing the store.',
-    highlights: [
-      'Customer features: product search and filtering, wishlist, cart and checkout, order tracking and profile updates.',
-      'Admin panel to manage products, categories and orders, with separate admin, staff and user roles.',
-      'PHP backend with a MySQL database and an HTML, CSS and JavaScript frontend.',
-    ],
-    tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
-  },
-  {
-    title: 'MiniCloud',
-    tag: 'Course project',
-    context: 'Cloud Computing',
-    links: [
-      {
-        label: 'GitHub',
-        url: 'https://github.com/LeNhatHuy-CS/CloudComputing_MiniCloud',
-      },
-    ],
-    summary:
-      'A containerized mini cloud environment where each service runs in its own container, orchestrated with Docker Compose.',
-    highlights: [
-      'Services include an API gateway and proxy, an application backend, an authentication and identity server, and an internal DNS server.',
-      'Also includes object storage, a relational database, Prometheus monitoring and multiple web frontend servers.',
-    ],
-    tech: ['Docker', 'Docker Compose', 'Python', 'Prometheus'],
+    tech: ['Python', 'Llama 3.2', 'PEFT (LoRA/QLoRA)', 'ChromaDB', 'FAISS', 'LangChain', 'Django', 'React', 'Docker'],
   },
 ];
 
