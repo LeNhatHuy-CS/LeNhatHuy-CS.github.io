@@ -8,7 +8,6 @@ export const profile = {
   avatar: '/avatar.jpg',
   bio: [
     'I am a final-year Computer Science student at Ton Duc Thang University. I am interested in data analysis, machine learning and deep learning, with a focus on NLP and computer vision.',
-    'I have built course and team projects ranging from face authentication with liveness detection and Vietnamese visual question answering to statistical analysis of student performance and a containerized mini cloud. From May to October 2026 I worked as a Teaching Assistant Intern at MindX.',
   ],
   emails: ['lenhathuy.computerscience@gmail.com', 'lenhathuy219@gmail.com'],
   links: {
@@ -25,7 +24,7 @@ export const profile = {
 export const publications = [
   {
     title: 'GA-ECBM: Gated Additive Energy-Based Concept Bottleneck Models for Reliable Concept Interventions',
-    status: 'Under submission',
+    status: 'Under review',
     summary:
       'An energy-based concept bottleneck model with an additive concept-label energy and a gated image term, so correcting concepts at test time rarely turns a correct prediction into a wrong one. On CUB-200-2011 (3 seeds, 100 epochs) it cut intervention harm from 2.83% to 0.03% compared with the official ECBM.',
     authors: ['Huy Nhat-Le', 'Khanh Quoc Tran-Duong'],
@@ -35,7 +34,7 @@ export const publications = [
   {
     title:
       'ACC-ECBM: Interpretable Lung Cancer Identification from Chest Radiographs and Pre-Imaging Clinical Data with Concept Bottlenecks and Explainable Boosting',
-    status: 'Submitted',
+    status: 'Under review',
     venue:
       '[ICCIES 2027] 3rd International Conference on Computational Intelligence in Engineering Science (Scopus Indexed)',
     summary:
