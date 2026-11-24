@@ -50,6 +50,8 @@ export const publications = [
     status: 'Under review',
     venue:
       '[ICCIES 2027] 3rd International Conference on Computational Intelligence in Engineering Science (Scopus Indexed)',
+    summary:
+      'A provision-level benchmark for time-aware Vietnamese legal retrieval, where a retrieved clause must have been in force at the date that governs the question. It is built from 93,331 normative documents split into 3.12 million Article, Clause and Point chunks, with an amendment graph of 52,127 provision-level overrides and 572 grounded citizen questions. Across 22 retrieval configurations, unconstrained BM25 and BGE-M3 reach top-10 temporal violation rates of 48.25% and 52.47%; adding provision-level validity intervals cuts them to 1.59%-1.80%.',
     authors: ['Phan, T. H.', 'Nguyen, Q. H.', 'Le, N. H.', 'Le, D. D.', 'Duong, T.-C.', 'Le, A.-C.'],
     me: 'Le, N. H.',
     links: [{ label: 'Site', url: 'https://iccies.tdtu.edu.vn/' }],
