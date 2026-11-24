@@ -25,9 +25,11 @@ export const publications = [
   {
     title: 'GA-ECBM: Gated Additive Energy-Based Concept Bottleneck Models for Reliable Concept Interventions',
     status: 'Under review',
+    venue:
+      '[ICCIES 2027] 3rd International Conference on Computational Intelligence in Engineering Science (Scopus Indexed)',
     summary:
       'An energy-based concept bottleneck model with an additive concept-label energy and a gated image term, so correcting concepts at test time rarely turns a correct prediction into a wrong one. On CUB-200-2011 (3 seeds, 100 epochs) it cut intervention harm from 2.83% to 0.03% compared with the official ECBM.',
-    authors: ['Huy Nhat-Le', 'Khanh Quoc Tran-Duong'],
+    authors: ['Thanh Phong Nguyen', 'Huy Nhat-Le', 'Khanh Quoc Tran-Duong', 'Van Huy Pham'],
     me: 'Huy Nhat-Le',
     links: [{ label: 'GitHub', url: 'https://github.com/LeNhatHuy-CS/GA-ECBM' }],
   },
